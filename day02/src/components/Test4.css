@@ -1,0 +1,12 @@
+.con {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.con article {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background: hotpink;
+}

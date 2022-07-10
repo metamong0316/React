@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>스프레드(... , concat)</title>
+
+    <script>
+        const arr = ['김태리', '김다미', '최우식']
+        const arr1 = arr.concat()
+        const arr2 = [...arr] //copy
+
+        console.log(arr1);
+        console.log(arr2);
+
+        //불변성의 데이터 추가
+        const arr3 = arr.concat(10,20,30) 
+        const arr4 = [...arr, '기린', '사슴', '호랑이']
+
+        console.log(arr3);
+        console.log(arr4);
+
+        const dog = {
+            name: 'wawa',
+            age: 2,
+            addr: 'Seoul'
+        }
+
+        const dog1 = {...dog, name: 'podle', age: 3} //데이터 갱신.
+        console.log(dog1)
+    </script>
+</head>
+<body>
+
+    <pre>
+        
+
+
+    </pre>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>리액트 cdn</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+
+    
+</head>
+<body>
+    <div id="root"> 화면에 보이는 영역  </div>
+
+    
+    <script type="text/babel">
+    //React.createElement('태그', 속성, 값);
+        // const el = React.createElement('h1', {}, '제목입니다.');
+        // const dom = document.querySelector('#root');
+        // ReactDOM.render(el, dom)
+
+
+        const name = '홍길동'
+        const age = 20
+        const addr = '서울'
+        const tel = '010-3040-7225'
+
+        const el = (
+            <div>
+                <h2>신상명세서</h2>
+                <ul>
+                    <li>이름: {name}</li>
+                    <li>나이: {age}</li>
+                    <li>지역: {addr}</li>
+                    <li>번호: {tel}</li>
+                </ul>
+            </div>
+
+        )
+
+        const dom = document.querySelector('#root')
+        ReactDOM.render(el, dom)
+
+    </script>
+
+</body>
+</html>

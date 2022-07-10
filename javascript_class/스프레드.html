@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>스프레드 연산자</title>
+
+    <script>
+        const data = [
+            {id:1, name: '홍길동'},
+            {id:2, name: '홍길동1'},
+            {id:3, name: '홍길동2'},
+            {id:4, name: '홍길동3'},
+        ]
+
+        const data1 = data.concat();
+        const data2 = data.concat({id:5 , name: '홍길동4'})
+
+        console.log(data1)
+        console.log(data2)
+        console.log('\n')
+
+        const data3 = [...data]
+        const data4 = [...data , {id: 6, name: '홍길동 5'}]
+
+        console.log(data3)
+        console.log(data4)
+        console.log('\n')
+        //갱신
+        const data5 = data.map(item  => {
+            if(item.id === 1 ){
+                return{
+                    ...item, 
+                    name: '김다미'  
+                }
+            } else {
+                return item
+            }
+        })
+
+        console.log(data5)
+        console.log('\n')
+
+        //갱신
+        const data6 = data.map(item => item.id === 2 ? {...item , name:'남주혁'} : item)
+        console.log(data6)
+        console.log('\n')
+
+
+    </script>
+</head>
+<body>
+
+    <pre>
+        
+
+
+    </pre>
+
+</body>
+</html>

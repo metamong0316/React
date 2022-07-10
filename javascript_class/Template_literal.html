@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>템블릿 리터럴</title>
+
+    <script>
+    let a = 20;
+    let b = 100;
+
+    const result1 = 'a:'+ a + ' b:' + b + '의 합:' + (a+b);
+    const result2 = `a:${a} b:${b}의 합:${a+b}`; //backtick 이라고 해서 숫자키 1옆에 원화 표시가 있음. 띄어쓰기 구별함.
+
+    console.log(result1);
+    console.log('\n');
+    console.log(result2);
+
+    let name = '홍길동';
+    let age = 20;
+    let addr= '서울';
+    const result3 = `${name} 나이는 ${age}이고 주소는 ${addr}입니다.`;
+
+    console.log('\n');
+    console.log(result3);
+    </script>
+</head>
+<body>
+
+    <pre>
+
+    </pre>
+
+</body>
+</html>
